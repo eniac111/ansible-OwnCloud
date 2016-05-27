@@ -1,14 +1,22 @@
-- name: Install MariaDB Repo
-  apt_repository:
-    repo: 'deb [arch=amd64,i386] http://mirror.23media.de/mariadb/repo/10.1/ubuntu trusty main'
-
 - name: Add MariaDB Repository Key
   apt_key:
-    state: 'present'
+    state    : 'present'
     keyserver: 'keyserver.ubuntu.com'
     id       : '0xcbcb082a1bb943db'
+
+- name: Setup MariaDB Repo
+  apt_repository:
+    repo: 'deb [arch=amd64,i386] http://ftp.hosteurope.de/mirror/mariadb.org/repo/10.1/ubuntu xenial main'
 
 - name: Install MariaDB
   apt: name=mariadb-server state=latest update_cache=yes
 
+- name: Add OwnCloud Repository Key
+  apt_key:
+    url  : 'https://download.owncloud.org/download/repositories/stable/xUbuntu_16.04/Release.key'
+    state: 'present'
+
+- name: Setup OwnCloud Repo
+  apt_repository:
+    repo: 'deb http://download.owncloud.org/download/repositories/stable/xUbuntu_16.04/ /'
 
