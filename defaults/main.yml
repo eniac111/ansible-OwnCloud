@@ -1,0 +1,15 @@
+owncloud_hostname: 'cloud.example.com'
+
+owncloud_data_dir: '/var/owncloud/data'
+
+owncloud_mysql_user: 'owncloud'
+owncloud_mysql_dbname: 'owncloud'
+owncloud_mysql_password: 'fkerfkoenjknjkwcw'
+
+owncloud_adminlogin: 'ocadmin'
+owncloud_adminpass:  'adminpass'
+
+redis_enabled: True
+redis_host: 'localhost'
+redis_port: '6379'
+

@@ -1,0 +1,16 @@
+<?php
+
+$AUTOCONFIG = array(
+
+  "directory"      => "{{ owncloud_data_dir }}",
+  "dbtype"         => "mysql",
+  "dbname"         => "{{ owncloud_mysql_dbname }}",
+  "dbuser"         => "{{ owncloud_mysql_user }}",
+  "dbpass"         => "{{ owncloud_mysql_password }}",
+  "dbhost"         => "localhost",
+  "dbtablepredfix" => "oc_",
+  
+  "adminlogin"     => "{{ owncloud_adminlogin }}",
+  "adminpass"      => "{{ owncloud_adminpass }}",
+);
+  

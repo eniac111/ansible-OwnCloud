@@ -21,6 +21,11 @@ owncloud_packages:
   - 'php7.0-fpm'
   - 'php7.0-ldap'
   - 'php-smbclient'
+  - 'php-pear'
   - 's-nail'
   - 'libreoffice'
   - 'imagemagick'
+
+php_redis_packages:
+  - 'build-essential'
+  - 'php7.0-dev'
