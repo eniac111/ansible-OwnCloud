@@ -25,6 +25,7 @@ owncloud_packages:
   - 's-nail'
   - 'libreoffice'
   - 'imagemagick'
+  - 'smbclient'
 
 php_redis_packages:
   - 'build-essential'
