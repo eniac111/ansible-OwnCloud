@@ -1,2 +1,2 @@
 # The project was moved to:
-## [git@github.com:eniac111/ansible-OwnCloud.git](git@github.com:eniac111/ansible-OwnCloud.git)
+## [https://code.petrovs.info/blago/ansible-OwnCloud](https://code.petrovs.info/blago/ansible-OwnCloud)
